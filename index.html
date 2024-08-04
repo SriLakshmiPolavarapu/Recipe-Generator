@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Felling Hungry?</h1>
+      <h2>Discover Delicious Recipes by Entering Your Favorite Ingredients!</h2>
+      <form method="POST">
+        <textarea
+          name="ingredients"
+          placeholder="Please enter your ingredients here"
+        ></textarea>
+        <button type="submit">Generate Recipes</button>
+      </form>
+    </div>
+  </body>
+</html>
