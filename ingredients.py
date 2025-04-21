@@ -11,10 +11,10 @@ def parse_ingredients(ingredients):
 
 
 def get_recipes(ingredients):
-    url = "https://api.edamam.com/api/recipes/v2"
+    url = ""
 
-    app_id = '32b26e41'
-    app_key = '181d8d5fdf017fae168d4aaa6d6df848'
+    app_id = ''
+    app_key = ''
 
     query = ','.join(ingredients)
 
